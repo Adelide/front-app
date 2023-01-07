@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './stores/store';
-import { MyRouter } from './features/my-router/MyRouter'
+import { MyMenu } from './features/my-menu/MyMenu'
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
@@ -11,7 +11,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <MyRouter />
+      <MyMenu />
     </Provider>
   </React.StrictMode>
 );
