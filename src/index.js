@@ -2,8 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './stores/store';
-import { MyMenu } from './features/my-menu/MyMenu'
 import reportWebVitals from './reportWebVitals';
+import { MyApi3 } from './features/my-api/MyApi3';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -11,7 +11,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <MyMenu />
+      <MyApi3 />
     </Provider>
   </React.StrictMode>
 );
